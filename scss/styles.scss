@@ -38,15 +38,15 @@ $base-color: #e3780c;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
-$background: #515151;
-$background-alt: #f2f2f5;
+$background: #505050;
+$background-alt: #e71b1b;
 
 // Define border colors
-$border: #dcd9d9;
+$border: #0000ff;
 
 // Define text colors
-$heading: #484848;
-$text: #74808a;
+$heading: #515151;
+$text: #585858d1;
 
 /*
     ---------------------
@@ -646,7 +646,7 @@ footer {
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    background: #fff;
+    background: #be0606;
     border-radius: 4px;
 }
 
@@ -752,10 +752,10 @@ footer {
         border: none;
         margin-bottom: 10px;
         background: darken($base-color, 15%);
-        color: #fff;
+        color: #fb7a7a;
         @include transition();
         @include placeholder {
-            color: #fff;
+            color: #b3a3a3;
         }
 
         &:focus {
