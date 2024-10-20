@@ -265,7 +265,7 @@ footer {
 
 .btn-rounded-white {
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
     padding: 15px 25px;
     border: 3px solid #fff;
     border-radius: 30px;
@@ -282,6 +282,7 @@ footer {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 17px;
     margin-top: 20px;
+    font-weight: bolder;
 }
 
 .shadow-large {
@@ -323,7 +324,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../files/06FF2123-C612-49CE-877E-EC441D0314DB_1_206_a.jpeg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
@@ -558,6 +559,7 @@ footer {
     h2 {
         color: $heading;
         margin-bottom: 50px;
+        margin-top: 50px;
     }
 }
 
@@ -578,7 +580,9 @@ footer {
     span {
         color: $text;
         display: flex; 
-        justify-content: center 
+        justify-content: center; 
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     h4 {
