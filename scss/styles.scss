@@ -328,6 +328,8 @@ footer {
     background-size: cover;
     padding: 15px;
     overflow: hidden;
+    --r: 1920 / 1080;
+    aspect-ratio: var(--r);
 }
 
 #lead-content {
@@ -360,9 +362,9 @@ footer {
 }
 
 // NOTE this where opacity of the top pane is set
-#lead-overlay {
+#lead-overlay video{
     position: absolute;
-    height: 100%;
+    height: auto;
     width: 100%;
     top: 0;
     right: 0;
