@@ -323,12 +323,12 @@ footer {
     position: relative;
     height: 100vh;
     min-height: 500px;
-    max-height: 1080px;
+    max-height: 2160px;
     //background: url(../media/cad.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
-    --r: 1920 / 1080;
+    --r: 3840 / 2160;
     aspect-ratio: var(--r);
 }
 
