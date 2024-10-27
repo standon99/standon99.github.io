@@ -321,13 +321,13 @@ footer {
 
 #lead {
     position: relative;
-    height: 100vh;
-    //background: url(../media/cad.jpg);
+    //height: 100vh;
+    //min-height: 500px;
+    //max-height: 1080px;
     background-size: cover;
     padding: 15px;
     overflow: hidden;
-    --r: 3840 / 2160;
-    aspect-ratio: var(--r);
+    aspect-ratio: 16/9;
 }
 
 #lead-content {
@@ -360,16 +360,23 @@ footer {
 }
 
 // NOTE this where opacity of the top pane is set
-#lead-overlay video{
-    position: absolute;
-    height: auto;
+#lead-overlay {
     width: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    height: 100%;
+    position: absolute;
+    padding:0;
+    margin:0;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+    overflow:hidden;
     background: rgba($base-color-hover, 0.8);
-    z-index: 1;
+}
+
+#lead-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #lead-down {
