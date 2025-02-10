@@ -1037,3 +1037,33 @@ footer {
 
 }
 
+/*
+    -----------------------------
+    ----- 13. Extra Styles -----
+    -----------------------------
+*/
+
+
+.return_button {
+    border: none;
+    color: black;
+    background-color:  rgb(191, 169, 143);;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    //display: inline-block;
+    font-size: 18px;
+    margin: 15px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 14px
+}
+
+.button-horiz-center {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    //-ms-transform: translateX(-50%);
+    //transform: translateX(-50%);
+}

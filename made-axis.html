@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Siddhant Tandon</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">The Made-Axis</h2>
+                </div>
+                <a href="https://ialab.it.monash.edu/~dwyer/papers/madeaxis.pdf">View Paper</a> and <a href="https://github.com/JimSmiley/MADE-Axis">View Code</a>
+
+                <div class="col-md-8">
+                    <br> 
+                    <p>
+                        I worked on the MADE-Axis while I interned with the Immersive Analytics Laboratory at Monash University from end-2019 (my 2nd year) to end-2020. The devices were designed to serve as composable controllers for data visualization in extended reality and more conventional 2D formats. Please find the video demonstration of the device from ACM ISS 2021 below.
+                    </p>
+                        <div style="text-align:center; padding:20px">
+                            <iframe width="510" height="287" src="https://www.youtube.com/embed/ILZlecsvUbw" title="MADE-Axis: a Modular, Actuated Device to Embody a data dimension." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <p>
+                            The controllers are composed of a pair of actuated sliders, as well as a rotary encoder (knob) and a push button.
+                            <br><br>
+                            I worked on developing these controllers, producing the firmware that runs on devices, and enabling features such as ranged selection of data and haptic feedback from the sliders. I also wrote a Unity program to facilitate Bluetooth and wired (USB) communications between the controllers and a host PC. The repository with code from this project I contributed to can be found <a href="https://github.com/JimSmiley/MADE-Axis">here.</a>
+                            <br><br>
+                            Beyond developing the software for the devices, over 2020, when I worked part-time with the lab, I also explored the design space offered by these controllers, by creating demo apps designed to showcase unique interactions made possible by the devices. This included an app that allowed the device to interact with Adobe Photoshop, as well as custom self-developed Windows Forms Applications. Below are a select few examples.
+                        </p>
+                        <br>
+
+                        <p style="font-weight: bolder; text-align:center; font-size: larger;"> Using the device to choose a color</p>
+                        
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/Sensitivity_Value_with_scroll_Colour_App.m4v" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p>An interesting interaction afforded by these controllers was their ability to allow accurate selection of a color, by modifying sensitivity of one slider using another. An early prototype application I developed allowed modifying RGB colors in two ways: <br><br> — Binding one slider each to the R and G color channels, and the blue channel to the rotary encoder. <br><br> — Clicking the rotary encoder button toggled between color channels, where one slider set the sensitivity of the other, allowing more precise selection of color. The sliders could also be used as "joysticks" by allowing the user to keep scrolling past the end of the range of colors mapped to the slider by holding at the extreme ends of the axis. When doing this a haptic "tapping" sensation was encoded using the motors of the sliders. </p>
+
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/Sensitivity Bars.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p>Communicating the range of colors the user had access to at a given sensitivity value was also a question I sought to answer. One approach I took was show bars on either side of the cursor on a color channel, which filled to show the domain fo colors available to the user on the slider.</p>
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/Sensitivity With Ball Meter.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p>Another approach I demonstrated was showing the available colors in a gradient directly below the color channel, with a cursor (circle) moving along this range with the user's selection. I also included a little canvas in the app, to allow drawing of simple shapes and squiggles.</p>
+                        
+                        
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/Graph_Colour_Modification.m4v" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p>The color selection techniques I had developed could be applied more broadly than just to art. Here, they are used to modify the shade of a data series, tying back in with the core function of the devices as controllers for data visualization. </p>
+
+
+
+                        <br>
+                        <p style="font-weight: bolder; text-align:center; font-size: larger;"> Using the device to control Adobe Photoshop</p>
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/adobe_resz_rotate.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p> The sliders could be used to resize and rotate and image, using the sliders for resizing operations, and the knob mapping to rotation.</p>
+
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/Translate_layer.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p> The sliders could also be used as joysticks to translate a layer of the project.</p>
+
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/Adobe_adjusting_colours.m4v" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p> The device could also be mapped to, and adjust the color widget in Photoshop.</p>
+
+                        <div style="text-align:center; padding:20px">
+                            <video width="570" style="margin:auto" controls >
+                                <source src="media/IALAbDemoVids/Snap To Value.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <p> As the sliders on the devices are actuated, a color could be "swabbed" in Photoshop, with the physical sliders aligning to reflect the selected color channel values. This color could then be fine tuned, or applied to other areas on the canvas.</p>
+                </div>
+                <br>
+                <a href="https://ialab.it.monash.edu/~dwyer/papers/madeaxis.pdf">View Paper</a> and <a href="https://github.com/JimSmiley/MADE-Axis">View Code</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="button-horiz-center">
+        <a href="index.html">
+            <button class="return_button">Back</button>
+        </a>
+    </div>
+    <!-- End #about -->
