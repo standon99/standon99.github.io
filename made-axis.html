@@ -36,17 +36,17 @@
                     </p>
                     <br>
                     <p>
-                        I worked on the MADE-Axis while I interned with the Immersive Analytics Laboratory at Monash University from end-2019 (my 2nd year) to end-2020. The devices were designed to serve as composable controllers for data visualization in extended reality and more conventional 2D formats. Please find the video demonstration of the device from ACM ISS 2021 below.
+                        I worked on the MADE-Axis during my internship at the Immersive Analytics Laboratory at Monash University from late 2019 (the second year of my undergraduate studies) to the end of 2020. The devices were designed to serve as composable controllers for data visualization in extended reality and conventional 2D formats. Below is a video demonstration of the device from ACM ISS 2021.
                     </p>
                         <div style="text-align:center; padding:20px">
                             <iframe width="510" height="287" src="https://www.youtube.com/embed/ILZlecsvUbw" title="MADE-Axis: a Modular, Actuated Device to Embody a data dimension." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                         <p>
-                            The controllers are composed of a pair of actuated sliders, as well as a rotary encoder (knob) and a push button.
+                            The controllers consist of a pair of actuated sliders, a rotary encoder (knob), and a push button.
                             <br><br>
-                            I worked on developing these controllers, producing the firmware that runs on devices, and enabling features such as ranged selection of data and haptic feedback from the sliders. I also wrote a Unity program to facilitate Bluetooth and wired (USB) communications between the controllers and a host PC. The repository with code from this project I contributed to can be found <a href="https://github.com/JimSmiley/MADE-Axis">here.</a>
+                            I contributed to the development of these controllers by programming the firmware that runs on the devices, enabling features such as ranged selection of data and haptic feedback from the sliders. I also developed a Unity program to facilitate Bluetooth and wired (USB) communications between the controllers and a host PC. The repository containing the code I contributed to for this project can be found <a href="https://github.com/JimSmiley/MADE-Axis">here.</a>
                             <br><br>
-                            Beyond developing the software for the devices, over 2020, when I worked part-time with the lab, I also explored the design space offered by these controllers, by creating demo apps designed to showcase unique interactions made possible by the devices. This included an app that allowed the device to interact with Adobe Photoshop, as well as custom self-developed Windows Forms Applications. Below are a select few examples.
+                            In addition to developing the software for the devices, during 2020, when I worked part-time with the lab, I explored the design space offered by these controllers by creating demo applications designed to showcase unique interactions made possible by the devices. This included an application that allowed the device to interact with Adobe Photoshop, as well as custom self-developed Windows Forms applications. Below are a select few examples.
                         </p>
                         <br>
 
@@ -58,7 +58,8 @@
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <p>An interesting interaction afforded by these controllers was their ability to allow accurate selection of a color, by modifying sensitivity of one slider using another. An early prototype application I developed allowed modifying RGB colors in two ways: <br><br> — Binding one slider each to the R and G color channels, and the blue channel to the rotary encoder. <br><br> — Clicking the rotary encoder button toggled between color channels, where one slider set the sensitivity of the other, allowing more precise selection of color. The sliders could also be used as "joysticks" by allowing the user to keep scrolling past the end of the range of colors mapped to the slider by holding at the extreme ends of the axis. When doing this a haptic "tapping" sensation was encoded using the motors of the sliders. </p>
+                        <p>An interesting interaction afforded by these controllers is their ability to allow accurate selection of a color by modifying the sensitivity of one slider using another. An early prototype application I developed allowed modifying RGB colors in two ways:<br><br> 	•	Binding one slider each to the R and G color channels, and the blue channel to the rotary encoder. <br><br> 	•	Clicking the rotary encoder button toggled between color channels, where one slider set the sensitivity of the other, allowing more precise selection of color. The sliders could also be used as “joysticks” by allowing the user to keep scrolling past the end of the range of colors mapped to the slider by holding at the extreme ends of the axis. When doing this, a haptic “tapping” sensation was encoded using the motors of the sliders.
+                        </p>
 
                         <div style="text-align:center; padding:20px">
                             <video width="570" style="margin:auto" controls >
@@ -66,14 +67,14 @@
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <p>Communicating the range of colors the user had access to at a given sensitivity value was also a question I sought to answer. One approach I took was show bars on either side of the cursor on a color channel, which filled to show the domain fo colors available to the user on the slider.</p>
+                        <p>Communicating the range of colors available to the user at a given sensitivity value was also a question I sought to answer. One approach I took was to show bars on either side of the cursor on a color channel, which filled to show the domain of colors available to the user on the slider.</p>
                         <div style="text-align:center; padding:20px">
                             <video width="570" style="margin:auto" controls >
                                 <source src="media/IALAbDemoVids/Sensitivity With Ball Meter.m4v" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <p>Another approach I demonstrated was showing the available colors in a gradient directly below the color channel, with a cursor (circle) moving along this range with the user's selection. I also included a little canvas in the app, to allow drawing of simple shapes and squiggles.</p>
+                        <p>Another approach I demonstrated was showing the available colors in a gradient directly below the color channel, with a cursor (circle) moving along this range with the user’s selection. I also included a small canvas in the application to allow drawing of simple shapes and squiggles.</p>
                         
                         
                         <div style="text-align:center; padding:20px">
@@ -82,10 +83,7 @@
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <p>The color selection techniques I had developed could be applied more broadly than just to art. Here, they are used to modify the shade of a data series, tying back in with the core function of the devices as controllers for data visualization. </p>
-
-
-
+                        <p>The color selection techniques I developed could be applied more broadly than just to art. Here, they are used to modify the shade of a data series, tying back to the core function of the devices as controllers for data visualization. </p>
                         <br>
                         <p style="font-weight: bolder; text-align:center; font-size: larger;"> Using the device to control Adobe Photoshop</p>
                         <div style="text-align:center; padding:20px">
@@ -94,7 +92,7 @@
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <p> The sliders could be used to resize and rotate and image, using the sliders for resizing operations, and the knob mapping to rotation.</p>
+                        <p> The controllers could be used to resize and rotate and image, using the sliders for resizing operations, and the knob mapping to rotation.</p>
 
                         <div style="text-align:center; padding:20px">
                             <video width="570" style="margin:auto" controls >
