@@ -62,7 +62,57 @@ header a:focus { color: #fafafa; }
     border-bottom: 1px solid #262626;
 }
 #about h2 { color: #ffffff; }
-#about p { color: #d4d4d4; }
+#about p { color: #d4d4d4; margin: 0; }
+
+/* Wrap About in a rounded card with a subtle dark gradient. */
+#about .container {
+    max-width: 1000px;
+    background: linear-gradient(135deg, #1c1c1c 0%, #141414 50%, #101010 100%);
+    border: 1px solid #262626;
+    border-radius: 16px;
+    padding: 40px 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.25s ease, border-width 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+#about .container:hover {
+    border-color: #3a3a3a;
+    background: linear-gradient(135deg, #242424 0%, #1a1a1a 50%, #161616 100%);
+}
+
+/* =========================================================================
+   Shared hover behaviour for interactive content cards
+   Thicker border + lighter background on hover. Uses inset box-shadow
+   to simulate a thicker border without reflowing layout.
+   ========================================================================= */
+.vtimeline-content,
+.education-block,
+.project,
+.optional-section-block,
+.vtimeline-icon-image,
+.vtimeline-icon-text,
+.vtimeline-icon-default {
+    transition: background 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.vtimeline-content:hover,
+.education-block:hover,
+.project:hover,
+.optional-section-block:hover {
+    background: #222222;
+    border-color: #3a3a3a;
+    box-shadow: 0 0 0 1px #3a3a3a inset, 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.vtimeline-icon-image:hover,
+.vtimeline-icon-text:hover,
+.vtimeline-icon-default:hover {
+    border-color: #d4a574;
+    box-shadow: 0 0 0 1px #d4a574 inset, 0 4px 12px rgba(212, 165, 116, 0.25);
+}
+.vtimeline-icon-text:hover,
+.vtimeline-icon-default:hover {
+    background: #222222;
+}
 
 /* --- Experience --- */
 #experience { border-bottom: 1px solid #262626; }
@@ -125,6 +175,14 @@ header a:focus { color: #fafafa; }
     color: #0a0a0a;
     background: #d4a574;
     font-weight: 600;
+    border: 1px solid transparent;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+#skills li:hover {
+    background: #e8be8e;
+    border-color: #f5d0a0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
 }
 
 /* --- Contact --- */
