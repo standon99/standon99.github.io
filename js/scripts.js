@@ -1,115 +1,109 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
+(function () {
+    var html = document.documentElement;
+    var body = document.body;
+    var header = document.querySelector(".site-header");
+    var mobileOpen = document.getElementById("mobile-menu-open");
+    var mobileClose = document.getElementById("mobile-menu-close");
+    var menuLinks = Array.prototype.slice.call(document.querySelectorAll("#menu a"));
+    var revealItems = Array.prototype.slice.call(document.querySelectorAll(".reveal-card"));
+    var sections = menuLinks
+        .map(function (link) {
+            return document.querySelector(link.getAttribute("href"));
+        })
+        .filter(Boolean);
 
-    Description: This file contains all the scripts associated with the single-page
-    portfolio website.
-*/
+    html.classList.remove("no-js");
 
-(function($) {
+    var year = document.getElementById("current-year");
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
 
-    // Show current year
-    $("#current-year").text(new Date().getFullYear());
+    function closeMenu() {
+        if (!header) return;
+        header.classList.remove("is-open");
+        body.classList.remove("menu-open");
+    }
 
-    // Remove no-js class
-    $('html').removeClass('no-js');
+    function scrollToTarget(target) {
+        if (!target) return;
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
 
-    // Animate to section when nav is clicked
-    $('header a').click(function(e) {
-
-        // Treat as normal link if no-scroll class
-        if ($(this).hasClass('no-scroll')) return;
-
-        e.preventDefault();
-        var heading = $(this).attr('href');
-        var scrollDistance = $(heading).offset().top;
-
-        $('html, body').animate({
-            scrollTop: scrollDistance + 'px'
-        }, Math.abs(window.pageYOffset - $(heading).offset().top) / 1);
-
-        // Hide the menu once clicked if mobile
-        if ($('header').hasClass('active')) {
-            $('header, body').removeClass('active');
-        }
-    });
-
-    // Scroll to top
-    $('#to-top').click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 500);
-    });
-
-    // Scroll to first element
-    $('#lead-down span').click(function() {
-        var scrollDistance = $('#lead').next().offset().top;
-        $('html, body').animate({
-            scrollTop: scrollDistance + 'px'
-        }, 500);
-    });
-
-    // Create timeline
-    $('#experience-timeline').each(function() {
-
-        var $this = $(this); // Store reference to this
-        var $userContent = $this.children('div'); // user content
-
-        // Create each timeline block
-        $userContent.each(function() {
-            $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+    if (mobileOpen && header) {
+        mobileOpen.addEventListener("click", function () {
+            header.classList.add("is-open");
+            body.classList.add("menu-open");
         });
+    }
 
-        // Add icons or logos to each block
-        $this.find('.vtimeline-point').each(function() {
-            var $content = $(this).find('.vtimeline-content');
-            var logo = $content.data('logo');
-            var logoAlt = $content.data('logoAlt') || $content.find('h3').first().text();
-            var logoText = $content.data('logoText');
-            var iconMarkup = '<div class="vtimeline-icon';
+    if (mobileClose) {
+        mobileClose.addEventListener("click", closeMenu);
+    }
 
-            if (logo) {
-                iconMarkup += ' vtimeline-icon-image"><img src="' + logo + '" alt="' + logoAlt + ' logo">';
-            } else if (logoText) {
-                iconMarkup += ' vtimeline-icon-text"><span>' + logoText + '</span>';
-            } else {
-                iconMarkup += ' vtimeline-icon-default"><i class="fa fa-map-marker"></i>';
-            }
-
-            iconMarkup += '</div>';
-            $(this).prepend(iconMarkup);
-        });
-
-        // Add dates to the timeline if exists
-        $this.find('.vtimeline-content').each(function() {
-            var date = $(this).data('date');
-            if (date) { // Prepend if exists
-                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
-            }
-        });
-
-    });
-
-    // Open mobile menu
-    $('#mobile-menu-open').click(function() {
-        $('header, body').addClass('active');
-    });
-
-    // Close mobile menu
-    $('#mobile-menu-close').click(function() {
-        $('header, body').removeClass('active');
-    });
-
-    // Load additional projects
-    $('#view-more-projects').click(function(e){
-        e.preventDefault();
-        $(this).fadeOut(300, function() {
-            $('#more-projects').fadeIn(300);
+    menuLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            var target = document.querySelector(link.getAttribute("href"));
+            if (!target) return;
+            event.preventDefault();
+            closeMenu();
+            scrollToTarget(target);
         });
     });
 
-})(jQuery);
+    var leadDown = document.getElementById("lead-down");
+    if (leadDown) {
+        leadDown.addEventListener("click", function (event) {
+            var target = document.querySelector(leadDown.getAttribute("href"));
+            if (!target) return;
+            event.preventDefault();
+            scrollToTarget(target);
+        });
+    }
+
+    var toTop = document.getElementById("to-top");
+    if (toTop) {
+        toTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    }
+
+    if ("IntersectionObserver" in window) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add("is-visible");
+                revealObserver.unobserve(entry.target);
+            });
+        }, {
+            rootMargin: "0px 0px -10% 0px",
+            threshold: 0.12
+        });
+
+        revealItems.forEach(function (item) {
+            if (item.classList.contains("is-visible")) return;
+            revealObserver.observe(item);
+        });
+
+        var navObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (!entry.isIntersecting) return;
+                var id = "#" + entry.target.id;
+                menuLinks.forEach(function (link) {
+                    link.classList.toggle("is-active", link.getAttribute("href") === id);
+                });
+            });
+        }, {
+            rootMargin: "-38% 0px -58% 0px",
+            threshold: 0
+        });
+
+        sections.forEach(function (section) {
+            navObserver.observe(section);
+        });
+    } else {
+        revealItems.forEach(function (item) {
+            item.classList.add("is-visible");
+        });
+    }
+})();

@@ -1,432 +1,489 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
-    <!-- <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/d961bef1723e7.js" data-cmp-host="a.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="16"></script> -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Siddhant Tandon</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <title>Siddhant Tandon | Robotics Research Engineer</title>
+    <meta name="description" content="Siddhant Tandon is a robotics research engineer working on robot exploration, navigation, AR/VR interfaces, and autonomous systems.">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<!-- Google tag (gtag.js) 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6G0VN2PV9D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-6G0VN2PV9D');
-</script>
--->
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
+    <div class="site-grid" aria-hidden="true"></div>
+
+    <button id="mobile-menu-open" class="mobile-menu-button" aria-label="Open navigation">
         <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+    </button>
+
+    <header class="site-header">
+        <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close navigation">
+            <span>Close</span>
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <nav aria-label="Primary navigation">
+            <ul id="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Siddhant Tandon</h1>
-            <h2>Robotics Research Engineer</h2>
-            <!-- <a href="media/ProfessionalResume.pdf" class="btn-rounded-white">Download my CV</a> -->
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay">
-            <video id="banner-video" playsinline autoplay loop muted>
-                <source src="https://github.com/standon99/standon99.github.io/blob/main/media/Website_Background.mp4?raw=true" type="video/mp4" />
-                Your browser does not support the video tag. type="video/mp4">
+    <main>
+        <section id="lead" class="hero">
+            <video id="banner-video" class="hero-video" playsinline autoplay loop muted preload="auto">
+                <source src="media/Website_Background_hero.mp4" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
-        </div>
+            <div class="hero-scrim" aria-hidden="true"></div>
+            <div class="hero-scanline" aria-hidden="true"></div>
 
-        <div id="lead-down">
-            <span>
+            <div id="lead-content" class="hero-content terminal-window reveal-card is-visible">
+                <div class="terminal-window-bar" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <code>~/siddhant-tandon/main</code>
+                </div>
+                <p class="terminal-prompt">boot --profile robotics_research_engineer</p>
+                <h1>Siddhant Tandon</h1>
+                <h2>Robotics Research Engineer</h2>
+                <p class="hero-summary">
+                    MS Robotics student at the University of Michigan working on robot exploration, navigation and multi-robot autonomy.
+                </p>
+                <!--
+                <div class="hero-actions">
+                    <a class="terminal-button" href="media/ProfessionalResume.pdf" target="_blank" rel="noopener">Resume</a>
+                    <a class="terminal-button terminal-button-secondary" href="#experience">Timeline</a>
+                </div>
+                -->
+            </div>
+
+            <a id="lead-down" class="scroll-cue" href="#about" aria-label="Scroll to About section">
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+            </a>
+        </section>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+        <section id="about" class="section-shell">
+            <div class="section-heading reveal-card">
+                <p class="section-kicker">init_about()</p>
+                <h2 class="heading">About Me</h2>
+            </div>
+            <div class="terminal-window content-panel reveal-card">
+                <div class="terminal-window-bar" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <code>about.md</code>
                 </div>
-                <div class="col-md-8">
-                    <p>
-                        Hi! I am a passionate roboticist currently undertaking an MS in robotics at the University of Michigan - Ann Arbor. My work is focussed on robot exploration and navigation.
-
-                        <!-- I am currently looking for research opportunities in this domain, and am open to internships for Summer 2026. Please feel free to reach out if you have any opportunities you think I would be a good fit for! -->
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about     Hi! I am a Robotics Research Engineer based out of Melbourne, Australia. I completed my university studies (an integrated Bachelors and Masters qualification) at Monash University last year, graduating with a Bachelors in Mechatronics and Robotics Engineering, and Master of Mechanical Engineering. My research interests lie at the intersection between robotics and human-computer interaction, with a focus on creating new user interfaces, both tangible and in the digital world (in AR and VR in particular). Outside of this, I also have a strong working knowledge of more conventional robotics research topics, such as AI and computer vision. My research interests lie at the intersection between robotics and human-computer interaction, with a focus on improving the way we work cooperate and interoperate with robots, especially using tools such as augmented and virtual reality. Outside of this, I also have a strong working knowledge of more conventional robotics research topics, such as AI and computer vision.
-                    </p>-->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="May 2026 – September 2026" data-logo="media/jpl2.png" data-logo-alt="NASA Jet Propulsion Laboratory">
-                <h3>NASA Jet Propulsion Laboratory</h3>
-                <h4>Incoming Research Intern</h4>
                 <p>
-                    I will be joining the Jet Propulsion Laboratory as a research intern in May 2026, where I will be working on multi-robot autonomy and exploration problems.
+                    Hi! I am a passionate roboticist currently pursuing an MS in Robotics at the University of Michigan, Ann Arbor. My work focuses on robot exploration and navigation.
                 </p>
             </div>
+        </section>
 
-            <div data-date="January 2025 – Present" data-logo="media/umich_logo.jpg" data-logo-alt="University of Michigan">
-                <h3>The University of Michigan, Ann Arbor</h3>
-                <h4>Graduate Instructor</h4>
-                <p>
-                    I am a graduate student instructor for ROB311 — How to build robots and make them move, a hands-on robotics course where juniors learn the fundamentals of robot design, construction and control. As the GSI I instruct lab sessions and also develop curriculum content.
-                    <!-- Specifically, my current work focuses on compositional target navigation: seeking to allow robots to interpret more complex inputs and reason effectively based on their world understanding and their . -->
-                </p>
+        <section id="experience" class="section-shell section-alt">
+            <div class="section-heading reveal-card">
+                <p class="section-kicker">stream_experience()</p>
+                <h2 class="heading">Experience</h2>
             </div>
 
-            <div data-date="August 2025 – Present" data-logo="media/umich_logo.jpg" data-logo-alt="University of Michigan">
-                <h3>SSI & CURLY Labs - The University of Michigan, Ann Arbor</h3>
-                <h4>Graduate Researcher</h4>
-                <p>
-                    At the SSI and CURLY labs at U-M, I have been working with Prof. Yulun Tian and Maani Ghaffari on single and multi-robot search and exploration problems. For semster one of my degree, I worked on U-M's submission to the DARPA TIAMAT challenge, focussed on single robot navigation and exploration. From January 2026 I have been leading a project investigating multi-robot approaches to this same problem.
-                </p>
-            </div>
-
-            <div data-date="November 2020 – Present" data-logo="media/defence.png" data-logo-alt="Defence Science and Technology Group">
-                <h3>Defence Science and Technology Group (DSTG)</h3>
-                <h4>Robotics Researcher</h4>
-                <p>
-                    Working on cutting-edge robotics and AI research problems for the Australian Government. I joined as an intern, but was retained as a placement student, and subsequently on a scholarship as a part time employee till the start of 2024, when I joined fulltime.
-
-                    I was part of the team of 6 that won the Chief Defense Scientist's Science & Engineering Excellence Award in 2024 (selected out of an organization of 2000+ researchers).
-                </p>
-            </div>
-
-            <div data-date="November 2019 – November 2020" data-logo="media/MonashLogo.png" data-logo-alt="Monash University">
-                <h3>Immersive Analytics Laboratory - Monash University</h3>
-                <h4>Research Assistant</h4>
-                <p>
-                    Worked under Professor Timothy Dwyer and Dr Maxime Cordeil on tangible controllers for AR/VR. My work resulting in creation of the "Made-Axis", which was published at ACM ISS 2022. The paper can be found <a href="https://dl.acm.org/doi/10.1145/3488546">here.</a> We won a best paper runner-up award!
-                </p>
-            </div>
-
-            <div data-date="July 2018 – February 2022" data-logo="media/MonashLogo.png" data-logo-alt="Monash University">
-                <h3>Monash University - Monash High Powered Rocketry</h3>
-                <h4>Flight and Control Systems Engineer</h4>
-                <p>
-                    I made rockets!
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="row">
-            <div class="education-block">
-                <div class="education-image">
-                    <img src="media/umich_logo.jpg" alt="University of Michigan Logo" class=center>
-                </div>
-                <span class="education-date">2025 - 2027</span>
-                <h4>Master of Science in Robotics</h4>
-                <ul>
-                    <li>
-                        My coursework is focused on autonomous systems control and artificial intelligence for robotics. </li>
-                    <li>
-                        My research, supervised by Prof. Maani Ghaffari, explores how robotic agents can navigate their surroundings more intelligently by developing a high-fidelity semantic understanding of the world around them.
-                    </li>
-                </ul>
-            </div>
-            <!-- End .education-block -->
-
-
-            <div class="education-block">
-                <div class="education-image">
-                    <img src="media/MonashLogo.png" alt="Monash University Logo" class=center>
-                </div>
-                <span class="education-date">2024</span>
-                <h4>Master of Mechanical Engineering</h4>
-                <p>
-                    Graduated with Distinction
-                </p>
-            </div>
-            <!-- End .education-block -->
-
-            <div class="education-block">
-                <div class="education-image">
-                    <img src="media/MonashLogo.png" alt="Monash University Logo" class=center>
-                </div>
-                <span class="education-date">2018 - 2023</span>
-                <h4>Bachelor of Mechatronics and Robotics Engineering (Honours)</h4>
-                <ul>
-                    <li>
-                        Completed the degree on a scholarship from the faculty, offering fee repayment for both my undergraduate and Masters degrees.
-                    </li>
-                    <li>
-                        Completed a minor in materials science and engineering
-                    </li>
-                </ul>
-            </div>
-            <!-- Commented out high school section-->
-            <!-- <div class="education-block">
-                <div class="education-image">
-                    <img src="media/mhs_logo.png" alt="Melbourne High School Logo" class=center>
-                </div>
-                <span class="education-date">2014 - 2018</span>
-                <h4>High School Certificate</h4>
-                <p>
-                    Graduated in the top 2% of high school leavers.
-                </p>
-            </div> -->
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="media/carla_bus_stop.png" />
+            <div id="experience-timeline" class="timeline">
+                <article class="timeline-item reveal-card">
+                    <div class="timeline-date">May 2026 - September 2026</div>
+                    <div class="timeline-marker">
+                        <img src="media/jpl2.png" alt="NASA Jet Propulsion Laboratory logo">
                     </div>
-                    <!-- End .project-image -->
+                    <div class="terminal-window timeline-content">
+                        <div class="terminal-window-bar" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <code>experience/jpl.log</code>
+                        </div>
+                        <h3>NASA Jet Propulsion Laboratory</h3>
+                        <h4>Incoming Research Intern</h4>
+                        <p>
+                            I will be joining the Jet Propulsion Laboratory as a research intern in May 2026, where I will work on multi-robot autonomy and exploration problems.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal-card">
+                    <div class="timeline-date">January 2025 - Present</div>
+                    <div class="timeline-marker">
+                        <img src="media/umich_logo.jpg" alt="University of Michigan logo">
+                    </div>
+                    <div class="terminal-window timeline-content">
+                        <div class="terminal-window-bar" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <code>experience/rob311.log</code>
+                        </div>
+                        <h3>The University of Michigan, Ann Arbor</h3>
+                        <h4>Graduate Instructor</h4>
+                        <p>
+                            I am a graduate student instructor for ROB 311, How to Build Robots and Make Them Move, a hands-on robotics course where juniors learn the fundamentals of robot design, construction, and control. As the GSI, I instruct lab sessions and develop curriculum content.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal-card">
+                    <div class="timeline-date">August 2025 - Present</div>
+                    <div class="timeline-marker">
+                        <img src="media/umich_logo.jpg" alt="University of Michigan logo">
+                    </div>
+                    <div class="terminal-window timeline-content">
+                        <div class="terminal-window-bar" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <code>experience/research.log</code>
+                        </div>
+                        <h3>SSI &amp; CURLY Labs - The University of Michigan, Ann Arbor</h3>
+                        <h4>Graduate Researcher</h4>
+                        <p>
+                            At the SSI and CURLY labs at U-M, I have been working with Prof. Yulun Tian and Prof. Maani Ghaffari on single- and multi-robot search and exploration problems. During the first semester of my degree, I worked on U-M's submission to the DARPA TIAMAT challenge, focused on single-robot navigation and exploration. Since January 2026, I have been leading a project investigating multi-robot approaches to this same problem.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal-card">
+                    <div class="timeline-date">November 2020 - Present</div>
+                    <div class="timeline-marker">
+                        <img src="media/defence.png" alt="Defence Science and Technology Group logo">
+                    </div>
+                    <div class="terminal-window timeline-content">
+                        <div class="terminal-window-bar" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <code>experience/dstg.log</code>
+                        </div>
+                        <h3>Defence Science and Technology Group (DSTG)</h3>
+                        <h4>Robotics Researcher</h4>
+                        <p>
+                            Working on cutting-edge robotics and AI research problems for the Australian Government. I joined as an intern, was retained as a placement student, and later continued on a scholarship as a part-time employee until the start of 2024, when I joined full time.
+                        </p>
+                        <p>
+                            I was part of the team of six that won the Chief Defence Scientist's Science and Engineering Excellence Award in 2024, selected from an organization of more than 2,000 researchers.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal-card">
+                    <div class="timeline-date">November 2019 - November 2020</div>
+                    <div class="timeline-marker">
+                        <img src="media/MonashLogo.png" alt="Monash University logo">
+                    </div>
+                    <div class="terminal-window timeline-content">
+                        <div class="terminal-window-bar" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <code>experience/ialab.log</code>
+                        </div>
+                        <h3>Immersive Analytics Laboratory - Monash University</h3>
+                        <h4>Research Assistant</h4>
+                        <p>
+                            Worked under Professor Timothy Dwyer and Dr. Maxime Cordeil on tangible controllers for AR/VR. My work resulted in the creation of the Made-Axis, which was published at ACM ISS 2022 and received a best paper runner-up award. The paper can be found <a href="https://dl.acm.org/doi/10.1145/3488546" target="_blank" rel="noopener">here</a>.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal-card">
+                    <div class="timeline-date">July 2018 - February 2022</div>
+                    <div class="timeline-marker">
+                        <img src="media/MonashLogo.png" alt="Monash University logo">
+                    </div>
+                    <div class="terminal-window timeline-content">
+                        <div class="terminal-window-bar" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <code>experience/rocketry.log</code>
+                        </div>
+                        <h3>Monash University - Monash High Powered Rocketry</h3>
+                        <h4>Flight and Control Systems Engineer</h4>
+                        <p>I made rockets.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="education" class="section-shell">
+            <div class="section-heading reveal-card">
+                <p class="section-kicker">load_education()</p>
+                <h2 class="heading">Education</h2>
+            </div>
+
+            <div class="education-grid">
+                <article class="terminal-window education-block reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>umich.robotics</code>
+                    </div>
+                    <img src="media/umich_logo.jpg" alt="University of Michigan logo">
+                    <span class="education-date">2025 - 2027</span>
+                    <h3>Master of Science in Robotics</h3>
+                    <ul>
+                        <li>Coursework focused on autonomous systems control and artificial intelligence for robotics.</li>
+                        <li>Research supervised by Prof. Maani Ghaffari, exploring how robotic agents can navigate more intelligently by developing a high-fidelity semantic understanding of the world around them.</li>
+                    </ul>
+                </article>
+
+                <article class="terminal-window education-block reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>monash.mech</code>
+                    </div>
+                    <img src="media/MonashLogo.png" alt="Monash University logo">
+                    <span class="education-date">2024</span>
+                    <h3>Master of Mechanical Engineering</h3>
+                    <p>Graduated with Distinction.</p>
+                </article>
+
+                <article class="terminal-window education-block reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>monash.mechatronics</code>
+                    </div>
+                    <img src="media/MonashLogo.png" alt="Monash University logo">
+                    <span class="education-date">2018 - 2023</span>
+                    <h3>Bachelor of Mechatronics and Robotics Engineering (Honours)</h3>
+                    <ul>
+                        <li>Completed the degree on a faculty scholarship offering fee repayment for both my undergraduate and master's degrees.</li>
+                        <li>Completed a minor in materials science and engineering.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section-shell section-alt">
+            <div class="section-heading reveal-card">
+                <p class="section-kicker">render_projects()</p>
+                <h2 class="heading">Projects</h2>
+            </div>
+
+            <div class="project-grid">
+                <article class="terminal-window project reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>carla_navigation.py</code>
+                    </div>
+                    <div class="project-image">
+                        <img src="media/carla_bus_stop.png" alt="CARLA bus stop scene">
+                    </div>
                     <div class="project-info">
                         <h3>Compositional Prompts for Rideshare Services</h3>
                         <p>
-                            A project I undertook through my self-driving vehicles course at the University of Michigan. The project involved developing a method to allow users to specify text-based requests to rideshare services for final-mile delivery (e.g. "drop me off by the coffee shop"). We developed a system using vision-language models to accept text prompts and output driver commands in the CARLA simulation environment.
+                            A project I undertook through my self-driving vehicles course at the University of Michigan. The project involved developing a method for users to specify text-based requests to rideshare services for final-mile delivery, such as "drop me off by the coffee shop." We developed a system using vision-language models to accept text prompts and output driver commands in the CARLA simulation environment.
                         </p>
-                        <a href="https://github.com/CharlesChang012/Natural-Language-Navigation-for-Rideshare-Vehicles">See more</a>
+                        <a href="https://github.com/CharlesChang012/Natural-Language-Navigation-for-Rideshare-Vehicles" target="_blank" rel="noopener">See more</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
+                </article>
 
-
-                <div class="project shadow-large">
+                <article class="terminal-window project reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>made_axis.ino</code>
+                    </div>
                     <div class="project-image">
-                        <img src="media/made-axis.jpg" />
+                        <img src="media/made-axis.jpg" alt="Made-Axis tangible controller">
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>The Made-Axis</h3>
                         <p>
-                            A project I worked on while a part of the Immersive Analytics Laboratory at Monash University. The Made-Axis is a tangible, actuated controller for data visualisation and analysis, both on conventional 2D screens, and in AR/VR. I worked on the development of the devices by programming their firmware, as well as demo applications to showcase their capabilities.
+                            A project I worked on while part of the Immersive Analytics Laboratory at Monash University. The Made-Axis is a tangible, actuated controller for data visualization and analysis on conventional 2D screens and in AR/VR. I worked on the device firmware and demo applications that showcased its capabilities.
                         </p>
                         <a href="made-axis.html">See more</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
+                </article>
 
-                <div class="project shadow-large">
+                <article class="terminal-window project reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>drone_landing_ar.cs</code>
+                    </div>
                     <div class="project-image">
-                        <video width="300" height="300" autoplay loop muted>
-                            <source src="https://github.com/standon99/standon99.github.io/blob/main/media/honours_thesis_video-square.mp4?raw=true" type="video/mp4" />
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source src="media/honours_thesis_video-square.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>AR for Assisted Drone Landings</h3>
                         <p>
-                            My honours thesis, focussed on using augmented reality to make a drone AI-copilot's actions more explainable. As part of this project, I developed an AR app (on HoloLens) to interface with the AI agent, and created a visualisation designed to communicate the agent's intent, certainity, and the control inputs it was producing. I also ran a user study to evaluated performance, which suggested AR was indeed efficacious in this context.
+                            My honours thesis focused on using augmented reality to make a drone AI co-pilot's actions more explainable. I developed a HoloLens AR app to interface with the AI agent and created a visualization to communicate the agent's intent, certainty, and control inputs. I also ran a user study to evaluate performance, which suggested AR was efficacious in this context.
                         </p>
-                        <a href="https://drive.google.com/drive/folders/1SOVnv5ZDmK11TdQGSqVuAyuSAKET0fIx?usp=sharing">View Thesis</a>
+                        <a href="https://drive.google.com/drive/folders/1SOVnv5ZDmK11TdQGSqVuAyuSAKET0fIx?usp=sharing" target="_blank" rel="noopener">View Thesis</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
+                </article>
 
-                <!-- <div class="project shadow-large">
+                <article class="terminal-window project reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>rocket_airbrake.cpp</code>
+                    </div>
                     <div class="project-image">
-                        <img src="media/made-axis.jpg" />
+                        <img src="media/AirbrakeRocket.jpeg" alt="Rocket airbrake project">
                     </div>
-                    <div class="project-info">
-                        <h3>A Mobile AR App for visualising </h3>
-                        <p>
-                            A project I worked on while a part of the Immersive Analytics Laboratory at Monash University. The Made-Axis is a tangible, actuated controller for data visualisation and analysis, both on conventional 2D screens, and in AR/VR. I worked on the development of the devices by programming their firmware, as well as demo applications to showcase it's capabilities.
-                        </p>
-                        <a href="https://ialab.it.monash.edu/~dwyer/papers/madeaxis.pdf">View Paper</a> and <a href="https://github.com/JimSmiley/MADE-Axis">View Code</a>
-                    </div>
-                </div> -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="media/AirbrakeRocket.jpeg" />
-                    </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Making Airbrakes for a Rocket</h3>
                         <p>
-                            A project from when I was a part of Monash High Powered Rocketry, creating actuatable airbrakes for a rocket to enable better control of the altitude reached by the system (a key metric for competition points allocation). In a team, I led avionics and airbrake actuation development, as well as dynamics analysis of the rocket (running CFD to simulate performance). We were also able to test the solution we engineered by launching a rocket with the payload.
+                            A project from my time in Monash High Powered Rocketry, creating actuatable airbrakes for a rocket to enable better altitude control, a key competition metric. In a team, I led avionics and airbrake actuation development, as well as rocket dynamics analysis using CFD. We tested the engineered solution by launching a rocket with the payload.
                         </p>
                         <a href="files/Design1Report.pdf">View Project Report</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                <div class="project shadow-large">
+                </article>
+
+                <article class="terminal-window project reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>mlx_chatbot.py</code>
+                    </div>
                     <div class="project-image">
-                        <video class="project-video" width="300" height="300" autoplay loop muted>
-                            <source src="media/llm_screencap.mov"
-                            Your browser does not support the video tag. type="video/mp4">
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source src="media/llm_screencap.mov" type="video/quicktime">
+                            Your browser does not support the video tag.
                         </video>
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>A Locally Hosted LLM Chatbot for Apple Silicon</h3>
                         <p>
-                            This project is a locally hosted chatbot using a Meta LLAMA 3.X model, and designed as a utility and as an educational experience, to learn more about how to interface with LLMs, tokenisation, context, paramters etc. as well as utilise Apple's new MLX framework. The UI features a minimalist Matrix-esque text entry and response interface (inspired by the "Hello Neo" scene from the first movie). Programmed in Python, utilising a Flask app to run the UI in a browser.
+                            This project is a locally hosted chatbot using a Meta Llama 3.x model. It was designed as a utility and educational experience to learn more about interfacing with LLMs, tokenization, context, parameters, and Apple's MLX framework. The UI features a minimalist Matrix-inspired text entry and response interface. It was programmed in Python with a Flask app serving the browser UI.
                         </p>
-                        <a href="https://github.com/standon99/Local-MLX-Chatbot/tree/master">View Repo</a>
+                        <a href="https://github.com/standon99/Local-MLX-Chatbot/tree/master" target="_blank" rel="noopener">View Repo</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
+                </article>
 
-                <div class="project shadow-large">
+                <article class="terminal-window project reveal-card">
+                    <div class="terminal-window-bar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <code>emg_game_control.m</code>
+                    </div>
                     <div class="project-image">
-                        <video class="project-video" width="300" height="300" autoplay loop muted>
-                            <source src="media/Med_Ins_Video.MOV"
-                            Your browser does not support the video tag. type="video/mp4">
+                        <video autoplay loop muted playsinline preload="metadata">
+                            <source src="media/Med_Ins_Video.MOV" type="video/quicktime">
+                            Your browser does not support the video tag.
                         </video>
                     </div>
-                    <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Using EMG to Control a Video Game</h3>
                         <p>
-                            In this project aimed to develop EMG control for video games, for amputees. The interface permits control of games like Flappy Bird and Pong. It entailed design of both the electrical circuit, as well as software. 
-                            Key skills I exercised included: <br />
-                            - Circuit prototyping and construction. <br />
-                            - Hardware filter design (we needed to create a band pass filter to isolate just muscle contraction signals). <br />
-                            - Programming (in MATLAB) to filter the signal further, and convert it into the inputs used to control the games.
+                            This project aimed to develop EMG control for video games for amputees. The interface permitted control of games like Flappy Bird and Pong. It involved both electrical circuit design and software development, including circuit prototyping, hardware filter design to isolate muscle contraction signals, and MATLAB programming to further filter the signal and convert it into game inputs.
                         </p>
                         <a href="files/Med_Inst_Report.pdf">View Report and Code</a>
                     </div>
-                    <!-- End .project-info -->
-                </div>
-                
-                <!-- 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="media/dashboard_screenshot.jpg" />
-                    </div>
-
-                    <div class="project-info">
-                        <h3>Resource Monitoring Dashboard</h3>
-                        <p>
-                            I am a massive computer nerd, and in my second year at university decided I wasn't happy with the information Windows Task Manager gave me. So I coded up my own resource monitoring Windows Forms application (in C#) for my laptop! It wasn't tested on any other devices, so guarantees for how well it will work on other computers.
-                        </p>
-                        <a href="https://github.com/standon99/Resource-Utilization-Dashboard/tree/main">View Code</a>
-                    </div>
-                -->
-                </div>
-                <!-- End .project -->
+                </article>
             </div>
-        </div>
-    </div>
-    <!-- End #projects -->
+        </section>
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Unity</li>
-            <li>Unreal Engine</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>MATLAB</li>
-            <li>VR/AR App Development</li>
-            <li>Embedded Programming</li>
-            <li>Linux Software Development</li>
-            <li>Git</li>
-            <li>Computer Aided Design</li>
-            <li>3D Printing</li>
-            <li>Circuit Analysis and Design</li>
-            <li>Computational Fluid Dynamics</li>   
-        </ul>
-    </div>
-    <!-- End #skills -->
+        <section id="skills" class="section-shell">
+            <div class="section-heading reveal-card">
+                <p class="section-kicker">index_skills()</p>
+                <h2 class="heading">Skills</h2>
+            </div>
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/f/xpwzqddk">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+            <ul class="skills-grid" aria-label="Skills">
+                <li class="reveal-card"><i class="devicon-python-plain" aria-hidden="true"></i><span>Python</span></li>
+                <li class="reveal-card"><i class="devicon-unity-plain" aria-hidden="true"></i><span>Unity</span></li>
+                <li class="reveal-card"><i class="devicon-unrealengine-original" aria-hidden="true"></i><span>Unreal Engine</span></li>
+                <li class="reveal-card"><i class="devicon-c-plain" aria-hidden="true"></i><span>C</span></li>
+                <li class="reveal-card"><i class="devicon-csharp-plain" aria-hidden="true"></i><span>C#</span></li>
+                <li class="reveal-card"><i class="devicon-matlab-plain" aria-hidden="true"></i><span>MATLAB</span></li>
+                <li class="reveal-card"><i class="fa fa-eye" aria-hidden="true"></i><span>VR/AR App Development</span></li>
+                <li class="reveal-card"><i class="fa fa-code" aria-hidden="true"></i><span>Embedded Programming</span></li>
+                <li class="reveal-card"><i class="devicon-linux-plain" aria-hidden="true"></i><span>Linux Software Development</span></li>
+                <li class="reveal-card"><i class="devicon-git-plain" aria-hidden="true"></i><span>Git</span></li>
+                <li class="reveal-card"><i class="fa fa-cubes" aria-hidden="true"></i><span>Computer Aided Design</span></li>
+                <li class="reveal-card"><i class="fa fa-print" aria-hidden="true"></i><span>3D Printing</span></li>
+                <li class="reveal-card"><i class="fa fa-bolt" aria-hidden="true"></i><span>Circuit Analysis and Design</span></li>
+                <li class="reveal-card"><i class="fa fa-line-chart" aria-hidden="true"></i><span>Computational Fluid Dynamics</span></li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section-shell section-alt contact-section">
+            <div class="section-heading reveal-card">
+                <p class="section-kicker">send_signal()</p>
+                <h2 class="heading">Get in Touch</h2>
+            </div>
+
+            <div id="contact-form" class="terminal-window reveal-card">
+                <div class="terminal-window-bar" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <code>contact.form</code>
+                </div>
+                <form method="POST" action="https://formspree.io/f/xpwzqddk">
+                    <input type="hidden" name="_subject" value="Contact request from personal website">
+                    <label>
+                        <span>Your email</span>
+                        <input type="email" name="_replyto" placeholder="you@example.com" required>
+                    </label>
+                    <label>
+                        <span>Your message</span>
+                        <textarea name="message" placeholder="Write your message..." required></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright <span id="current-year">Siddhant Tandon</span>
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/standon99" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/siddhant-tandon-australia/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <div class="footer-inner">
+            <p>Copyright <span id="current-year">2026</span> Siddhant Tandon</p>
+            <button id="to-top" class="top-button" aria-label="Scroll to top">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </button>
+            <ul class="social">
+                <li>
+                    <a href="https://github.com/standon99" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/siddhant-tandon-australia/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
-
 </html>
