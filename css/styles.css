@@ -650,6 +650,17 @@ textarea {
     filter: saturate(1.08) contrast(1.1);
 }
 
+.project-image-astrosky {
+    background: radial-gradient(ellipse at center, rgba(246, 221, 7, 0.06), transparent 70%), #06080a;
+}
+
+.project-image-astrosky img,
+.project:hover .project-image-astrosky img {
+    padding: 16px;
+    object-fit: contain;
+    filter: none;
+}
+
 .project-info {
     position: relative;
     z-index: 1;
@@ -683,6 +694,12 @@ textarea {
 .project-info a::after {
     content: "->";
     color: var(--cyan);
+}
+
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
 }
 
 .skills-grid {
