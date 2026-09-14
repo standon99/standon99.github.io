@@ -651,14 +651,14 @@ textarea {
 }
 
 .project-image-astrosky {
-    background: radial-gradient(ellipse at center, rgba(246, 221, 7, 0.06), transparent 70%), #06080a;
+    background: #0c141a;
 }
 
 .project-image-astrosky img,
 .project:hover .project-image-astrosky img {
-    padding: 16px;
     object-fit: contain;
     filter: none;
+    transform: none;
 }
 
 .project-info {
