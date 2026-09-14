@@ -571,7 +571,7 @@ textarea {
     display: block;
     width: 70px;
     height: 70px;
-    margin: 24px 24px 18px;
+    margin: 24px auto 18px;
     padding: 8px;
     border-radius: 8px;
     background: #edf4f0;
