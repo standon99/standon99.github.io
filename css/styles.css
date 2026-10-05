@@ -661,6 +661,17 @@ textarea {
     transform: none;
 }
 
+.project-image-imix {
+    background: #0d0e11;
+}
+
+.project-image-imix img,
+.project:hover .project-image-imix img {
+    object-fit: contain;
+    filter: none;
+    transform: none;
+}
+
 .project-image-astrostack img,
 .project:hover .project-image-astrostack img {
     filter: none;
