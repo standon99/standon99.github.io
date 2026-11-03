@@ -373,6 +373,38 @@ textarea {
     margin-bottom: 0;
 }
 
+.timeline-awards {
+    max-width: 74ch;
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.timeline-awards li {
+    position: relative;
+    margin-top: 8px;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 0.94rem;
+    line-height: 1.6;
+}
+
+.timeline-awards li::before {
+    content: "";
+    position: absolute;
+    top: 0.6em;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+.timeline-awards strong {
+    color: var(--text);
+    font-weight: 500;
+}
+
 /* ---------- education ---------- */
 
 .education-grid {
